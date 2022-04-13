@@ -1,0 +1,51 @@
+*
+  box-sizing: border-box
+  outline: none
+// html
+//   scroll-behavior: smooth
+
+body
+  color: $dark-blue
+  font-family: 'Open Sans', sans-serif
+.container
+  max-width: 1140px
+  margin: auto
+  width: 90%
+.link
+  text-decoration: none
+.button
+  cursor: pointer
+h1, h2, h3
+  &:lang(en)
+    font-family: "HK Grotesk-bold"
+.reviews p:lang(en)
+  font-family: "HK Grotesk-regular"
+  font-style: normal
+  font-weight: normal
+  text-align: center
+  color: #183B56
+#email-error
+  position: absolute
+  top: 60px
+  left: 0
+  color: #ff8c69
+  border-bottom: 1px solid #ff8c69
+  //box-shadow: 0 0 5px rgba(255,255,255,0.5)
+
+.link-top
+  display: block
+  position: fixed
+  bottom: 0
+  right: 15px
+  background-color: #fff
+  width: 50px
+  height: 50px
+  border: 2px solid #959EAD
+  border-radius: 2000px
+  z-index: 3
+    //width: 14px
+    //height: 14px
+  transform: translate(-50%,-50%) rotate(90deg)
+  background: url('../img/left-arrow.svg') no-repeat
+  background-position-x: 50%
+  background-position-y: 50%

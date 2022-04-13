@@ -1,0 +1,98 @@
+.modal
+  &__overlay
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(21, 101, 216,0.3)
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &_visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    left: 50%
+    top: 50%
+    max-width: 400px
+    width: 100%
+    padding: 35px 60px 0 60px
+    background-color: #fff
+    transform: translate(-50%,-50%)
+    color: $dark-blue
+    border-radius: 8px
+    z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    overflow: auto
+    //height: 90%
+    max-height: 90%
+    &_visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    right: 18px
+    top: 17px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    margin-top: 0
+    margin-bottom: 20px
+    text-transform: uppercase
+    text-align: center
+  &__div
+    position: relative
+    width: 100%
+    margin-bottom: 25px
+  &__input
+    position: relative
+    max-width: 447px
+    height: 56px
+    background-color: #fff
+    border-radius: 8px
+    border: none
+    padding: 17px 17px 17px 17px
+    width: 100%
+    //margin-bottom: 20px
+    border: 2px solid #1565D8
+    //filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+
+  &__button
+    margin-top: 15px
+    width: 100%
+    //width: 101px
+    height: 48px
+    border: 2px solid $blue-text
+    background-color: #fff
+    color: $blue-text
+    padding: 13px 24px
+    border-radius: 8px
+    filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    margin-bottom: 35px
+.modal__div label.invalid
+  border-bottom: none !important
+  //position: static !important
+  //top: 0!important
+  position: absolute
+  top: 55px !important
+  font-size: 12px
+  text-align: center
+  width: 100%
+
+  //top: 150px
+#password-error
+  position: absolute
+  top: 55px
+  left: 0
+  color: #ff8c69
+  text-align: center
+  width: 100%

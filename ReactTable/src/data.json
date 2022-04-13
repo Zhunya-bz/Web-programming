@@ -1,0 +1,55 @@
+[
+
+    {
+        "id":1,
+        "name":"Evgeniya",
+        "city":"Kazan"
+    },
+    
+    {
+        "id":2,
+        "name":"Nikita",
+        "city":"Moscow"
+    },
+    
+    {
+        "id":3,
+        "name":"Dasha",
+        "city":"Novosibirsk"
+    },
+    
+    {
+        "id":4,
+        "name":"Rishat",
+        "city":"Elabuga"
+    },
+    
+    {
+        "id":5,
+        "name":"Sasha",
+        "city":"Kiev"
+    },
+    
+    {
+        "id":6,
+        "name":"Vladimir",
+        "city":"Mumbai"
+    },
+    {
+        "id":7,
+        "name":"Kristina",
+        "city":"Varshava"
+    },
+    
+    {
+        "id":8,
+        "name":"Pavel",
+        "city":"Abakan"
+    },
+    
+    {
+        "id":9,
+        "name":"Oleg",
+        "city":"Sochi"
+    }
+]

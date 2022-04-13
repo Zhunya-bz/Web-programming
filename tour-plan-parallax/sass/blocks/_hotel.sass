@@ -1,0 +1,210 @@
+.hotel
+  padding-top: 13px
+  padding-bottom: 70px
+  &-info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 20px
+    &__stars
+      // max-heigh: 8px 
+    &__name
+      margin-top: 4px
+      margin-bottom: 0
+    &__offer
+      margin-left: 14px
+      margin-top: 4px
+    &__description
+      margin: 0
+  &-name
+    font-size: 24px
+    line-height: 30px
+  &-grid
+    display: flex
+    justify-content: space-between
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__slider
+    &_item
+      width: 100%
+      height: 100%
+      //height: 100%
+      object-fit: cover
+      position: relative
+      border-radius: 8px
+      overflow: hidden
+      &:after
+        content: " "
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+        z-index: 10
+
+  &-wrapper
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+  &-description
+    font-size: 12px
+    line-height: 15px
+.stars
+  flex-basis: 100%
+
+.offer
+  font-size: 10px
+  line-height: 13px
+  padding: 4px 9px
+  background-color: $primary
+  border-radius: 4px
+  color: $light
+
+.rating
+  max-width: 65px
+  min-height: 45px
+  text-align: center
+  color: $light
+  background-color: $primary
+  border-radius: 4px
+  &__text
+    font-size: 8px
+    line-height: 10px
+  &__counter
+    font-weight: bold
+    font-size: 14px
+    line-height: 18px
+  &__counter-5
+    font-size: 10px
+    line-height: 13px
+    font-weight: bold
+
+.swiper-container
+  width: 100%
+  height: 100%
+/*.swiper-container
+ width: 100%
+ height: 100%
+ //height: 100%
+ object-fit: cover
+ position: relative
+ border-radius: 8px
+ &:after
+ content: " "
+ position: absolute
+ top: 0
+ left: 0
+ bottom: 0
+ right: 0
+ background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+ z-index: 10*/
+.slider
+  width: 728px
+  height: 450px
+  &-button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 50
+    width: 30px
+    height: 30px
+    border: none
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    background-color: transparent
+    cursor: pointer
+    &_next
+      right: 18px
+      background-image: url(../img/arrow-next.svg)
+    &_prev
+      left: 18px
+      background-image: url(../img/arrow-prev.svg)
+.slider img
+  width: 100%
+  height: 100%
+  object-fit: cover
+  //overflow: hidden
+.booking
+  border-radius: 8px
+  width: 350px
+  height: 210px
+  padding: 28px
+  background-color: $dark
+  color: $light
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9px
+  &__price
+    display: flex
+    flex-direction: column
+  &__start
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__room
+    margin-top: 4px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    //min-width: 80px
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+    margin-bottom: 8px
+    &_bottom
+      font-weight: 600
+      font-size: 18px
+      line-height: 25px
+  &__description
+    margin-left: 9px
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 17px
+  &__number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    text-decoration: none
+    color: inherit
+  &__num
+    margin-left: 8px
+  &__button
+    width: 100%
+    min-height: 45px
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    border-radius: 4px
+    background-color: $primary
+    border: none
+    color: $light
+    cursor: pointer
+    text-align: center
+    padding: 13px 0
+.map
+  width: 347px
+  height: 213px
+  border-radius: 10px
+  coverflow: hidden
+.iframe
+  width: 100%
+  height: 100%
